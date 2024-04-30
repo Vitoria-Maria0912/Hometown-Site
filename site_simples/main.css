@@ -1,0 +1,47 @@
+:root {
+    --green: #5d00ff;
+    --white: #ffffff;
+    --black: #000000;
+}
+body {
+    background: var(--bg);
+}
+* {
+    color: var(--fontColor);
+    font-family: 'Helvetica';
+}
+ul {
+    font-family: 'Helvetica';
+}
+li {
+    list-style: circle;
+}
+.list {
+    list-style: square;
+}
+.dark-theme {
+    --color: #430397;
+    --fontColor: var(--green);
+    --bg: var(--black);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+
+}
+.light-theme {
+    --fontColor: var(--black);
+    --bg: var(--green);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+.btn:focus {
+    outline-style: none;
+    position: static;
+    top: 20px;
+    right: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
