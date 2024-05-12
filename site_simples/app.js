@@ -7,10 +7,10 @@ switcher.addEventListener(
         var className = document.body.className;
         
         if(className == "dark-theme") {
-            this.textContent = "Switch to Light Theme";
+            this.textContent = "Turn on lights";
         } else {
-            this.textContent = "Switch to Dark Theme";
+            this.textContent = "Turn off lights";
         }
-        console.log('current class name: ' + className);
+        // console.log('current class name: ' + className);
     }
 );
