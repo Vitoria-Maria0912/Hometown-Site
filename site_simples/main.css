@@ -14,7 +14,7 @@ body {
 .dark-theme {
     --fontColor: var(--purple);
     --bg: var(--black);
-    --btnBg: var(--white);
+    --btnBg: var(--purple);
     --btnFontColor: var(--black);
 
 }
@@ -23,4 +23,9 @@ body {
     --bg: var(--purple);
     --btnBg: var(--black);
     --btnFontColor: var(--white);
+}
+
+.btn:focus {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
 }
