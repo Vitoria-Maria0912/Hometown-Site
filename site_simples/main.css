@@ -3,9 +3,11 @@
     --white: #ffffff;
     --black: #000000;
 }
+
 body {
     background: var(--bg);
 }
+
 * {
     color: var(--fontColor);
     font-family: 'Helvetica';
@@ -14,10 +16,10 @@ body {
 .dark-theme {
     --fontColor: var(--purple);
     --bg: var(--black);
-    --btnBg: var(--purple);
-    --btnFontColor: var(--black);
-
+    --btnBg: var(--black);
+    --btnFontColor: var(--purple);
 }
+
 .light-theme {
     --fontColor: var(--black);
     --bg: var(--purple);
