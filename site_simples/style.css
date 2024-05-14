@@ -1,5 +1,5 @@
 :root {
-    --purple: #5d00ff;
+    --purple: #843cff;
     --white: #ffffff;
     --black: #000000;
 }
@@ -27,7 +27,37 @@ body {
     --btnFontColor: var(--white);
 }
 
-.btn:focus {
+.btn {
+    position: fixed;
+    left: 85%;
+    border-radius: 20px;
+    height: 60px;
+    width: 60px;
+    font-size: 16px;
+    background: var(--bg);
     color: var(--btnFontColor);
     background-color: var(--btnBg);
+}
+
+
+img {
+    width: 500px;
+    height: 300px;
+}
+
+#singer{
+    width: 250px;
+    height: 200px;
+}
+
+.name{
+    font-style: italic;
+}
+
+.topics {
+    font-style: italic;
+}
+
+#title {
+    text-align: center;
 }

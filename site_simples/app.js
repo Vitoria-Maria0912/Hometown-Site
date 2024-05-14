@@ -11,6 +11,5 @@ switcher.addEventListener(
         } else {
             this.textContent = "Turn off lights";
         }
-        // console.log('current class name: ' + className);
     }
 );
