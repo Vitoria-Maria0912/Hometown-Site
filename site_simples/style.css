@@ -39,6 +39,13 @@ body {
     background-color: var(--btnBg);
 }
 
+button {
+    font-size: 16px;
+    background: var(--bg);
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
 
 img {
     width: 500px;
