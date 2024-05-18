@@ -6,6 +6,7 @@
 
 body {
     background: var(--bg);
+    text-align: center;
 }
 
 * {
@@ -29,14 +30,11 @@ body {
 
 .btn {
     position: fixed;
-    left: 85%;
+    left: 92%;
+    top: 5%;
     border-radius: 20px;
     height: 60px;
     width: 60px;
-    font-size: 16px;
-    background: var(--bg);
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
 }
 
 button {
@@ -46,10 +44,10 @@ button {
     background-color: var(--btnBg);
 }
 
-
 img {
     width: 500px;
     height: 300px;
+    padding: 10px;
 }
 
 #singer{
@@ -65,6 +63,9 @@ img {
     font-style: italic;
 }
 
-#title {
-    text-align: center;
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    border-radius: 20px;
+    left: 90%;
 }

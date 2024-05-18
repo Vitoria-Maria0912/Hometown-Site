@@ -35,3 +35,8 @@ localizationButton.addEventListener('click', () => {
     const linkLocalization = "https://pt.wikipedia.org/wiki/Livramento_%28Para%C3%ADba%29#/map/0";
     window.open(linkLocalization, TARGET);
 });
+
+const backToTop = document.querySelector('#backToTop');
+backToTop.addEventListener('click', () => {
+    window.scrollTo(0, 0);
+});
