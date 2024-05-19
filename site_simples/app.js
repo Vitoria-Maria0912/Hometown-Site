@@ -1,5 +1,5 @@
 'use strict';
-const switcher = document.querySelector('.btn');
+const switcher = document.querySelector('#lights');
 switcher.addEventListener('click',() => {
         document.body.classList.toggle('dark-theme')
         var className = document.body.className;
@@ -8,28 +8,21 @@ switcher.addEventListener('click',() => {
 );
 
 const TARGET = "_blank";
-const historyButton = document.querySelector('#history');
-historyButton.addEventListener('click', () => {
-    const linkHistory = "https://livramento.pb.gov.br/a_cidade/historia";
-    window.open(linkHistory, TARGET);
-});
+const elements = ["#history", "#anthem", "#news", "#localization"];
 
-const anthemButton = document.querySelector('#anthem');
-anthemButton.addEventListener('click', () => {
-    const linkAnthem = "https://livramento.pb.gov.br/a_cidade/hino";
-    window.open(linkAnthem, TARGET);
-});
-
-const newsButton = document.querySelector('#news');
-newsButton.addEventListener('click', () => {
-    const linkNews = "https://livramento.pb.gov.br/noticias";
-    window.open(linkNews, TARGET);
-});
-
-const localizationButton = document.querySelector('#localization');
-localizationButton.addEventListener('click', () => {
-    const linkLocalization = "https://pt.wikipedia.org/wiki/Livramento_%28Para%C3%ADba%29#/map/0";
-    window.open(linkLocalization, TARGET);
+elements.forEach(selector => {
+  const button = document.querySelector(selector);
+  if (button) {
+    button.addEventListener('click', () => {
+      const link = 
+                  (selector === "#history") ? "https://livramento.pb.gov.br/a_cidade/historia" :
+                  (selector === "#anthem") ? "https://livramento.pb.gov.br/a_cidade/hino" :
+                  (selector === "#news") ? "https://livramento.pb.gov.br/noticias" :
+                  (selector === "#localization") ? "https://pt.wikipedia.org/wiki/Livramento_%28Para%C3%ADba%29#/map/0" :
+                  null;
+      window.open(link, TARGET);
+    });
+  }
 });
 
 const backToTop = document.querySelector('#backToTop');

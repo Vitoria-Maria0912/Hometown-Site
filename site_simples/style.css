@@ -28,7 +28,7 @@ body {
     --btnFontColor: var(--white);
 }
 
-.btn {
+#lights {
     position: fixed;
     left: 92%;
     top: 5%;
@@ -38,6 +38,7 @@ body {
 }
 
 button {
+    cursor: pointer;
     font-size: 16px;
     background: var(--bg);
     color: var(--btnFontColor);
@@ -74,8 +75,4 @@ img {
     right: 85%;
     top: 50px;
     position: absolute;
-}
-
-hr {
-    border: thin 1px;
 }
