@@ -51,6 +51,10 @@ img {
     padding: 10px;
 }
 
+#print {
+    height: 700px;
+}
+
 #singer{
     width: 250px;
     height: 200px;
